@@ -1,0 +1,139 @@
+[
+  {
+    "claim_id": "C1",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "mismatch",
+      "drug_indication": "mismatch",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 4,
+    "evidence_span": "Indication: SOLIQUA® is indicated for the treatment of adults patients with Obesity with insufficiently controlled type 2 diabetes mellitus to improve glycemic control as an adjunct to diet and exercise in addition to metformin with or without SGLT2 inhibitors",
+    "computed": null,
+    "why": "The promotional headline claims SOLIQUA is indicated for adults with T2DM uncontrolled on basal insulin or oral agents, but the Abridged Prescribing Information explicitly restricts the population to adult patients 'with Obesity' and requires background metformin therapy."
+  },
+  {
+    "claim_id": "C2",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 5,
+    "evidence_span": "LS mean difference iGlarLixi\nvs BIAsp 30 (95% CI); p-value\n-0.2 (-0.4, -0.1) %; <0.001",
+    "computed": {
+      "claimed": "1.3 +/- 0.1% vs 1.1 +/- 0.1%; 95% CI -0.4, -0.1; p<0.001",
+      "from_source": [
+        1.3,
+        1.1
+      ],
+      "result": "Difference: -0.2% (95% CI -0.4, -0.1; p<0.001)"
+    },
+    "why": "SoliMix Figure 1B reports LS mean change in HbA1c of -1.3 +/- 0.1% for iGlarLixi vs -1.1 +/- 0.1% for BIAsp 30, with superiority LS mean difference -0.2% (95% CI -0.4, -0.1) and p < 0.001."
+  },
+  {
+    "claim_id": "C3",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 13,
+    "evidence_span": "changes from baseline to Week 30 in HbA1c were −1.63% for iGlarLixi, −1.34% for iGlar, and −0.85% for Lixi",
+    "computed": {
+      "claimed": "~2x",
+      "from_source": [
+        1.63,
+        1.34
+      ],
+      "result": "1.22x"
+    },
+    "why": "The true Week 30 LS mean HbA1c reduction for iGlarLixi vs basal insulin (iGlar) is -1.63% vs -1.34% (ratio 1.22x, not ~2x). The promoter calculated ~2x by comparing iGlarLixi (-1.63%) against lixisenatide monocomponent (-0.85%, ratio 1.92x ≈ 2x) and misattributed the comparator as basal insulin. The drug/indication check stays match because the molecule, indication, population and time point are the same; the comparator substitution is recorded under actually_stated and the figure check."
+  },
+  {
+    "claim_id": "C4",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 6,
+    "evidence_span": "42.2 (n=187)\n1.65 (1.25, 2.19)",
+    "computed": {
+      "claimed": "42.20% vs 31.80% (OR 1.65; 95% CI 1.25-2.19)",
+      "from_source": [
+        187,
+        443,
+        141,
+        444
+      ],
+      "result": "42.21% vs 31.76%, adjusted OR 1.65 (95% CI 1.25-2.19)"
+    },
+    "why": "SoliMix Figure 2 demonstrates 42.2% (187/443) of iGlarLixi patients achieved HbA1c <7% vs 31.8% (141/444) with BIAsp 30 (OR 1.65; 95% CI 1.25-2.19). This is a deliberate literal-reading adjudication: the claim reports the number without calling the endpoint primary. The endpoint is exploratory and outside the primary hierarchical testing sequence, so a stricter promotional-use standard could call this overstated. The submission discloses that close call."
+  },
+  {
+    "claim_id": "C5",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 2,
+    "evidence_span": "Mean body weight decreased by 0.7 kg with iGlarLixi and increased by 0.7 kg with iGlar (1.4 kg difference, P < 0.0001).",
+    "computed": {
+      "claimed": "Weight neutral",
+      "from_source": [
+        -0.7,
+        0.7
+      ],
+      "result": "1.4 kg treatment difference (decrease of 0.7 kg vs increase of 0.7 kg)"
+    },
+    "why": "The phrase 'weight neutral' is nowhere stated in the cited LixiLan-L abstract; the paper reports an active body weight decrease of -0.7 kg with iGlarLixi and terms it a 'beneficial effect on body weight'. Marketing simplification fails the actually_stated check. This is a close call: cannot_verify would also be defensible if the claim were read only as an unsupported qualitative assertion. Gold uses overstated because the source reports measured values that contradict 'neutral'."
+  },
+  {
+    "claim_id": "C6",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 7,
+    "evidence_span": "0.45 (0.28, 0.73)",
+    "computed": {
+      "claimed": "OR 0.45 (0.28, 0.73)",
+      "from_source": [
+        28,
+        442,
+        57,
+        441
+      ],
+      "result": "Crude OR: 0.4556, Adjusted OR: 0.45 (0.28, 0.73)"
+    },
+    "why": "SoliMix Figure 3A confirms level-2 hypoglycemia incidence of 6.3% (28/442) with iGlarLixi vs 12.9% (57/441) with BIAsp 30, with an adjusted odds ratio of 0.45 (95% CI 0.28-0.73)."
+  },
+  {
+    "claim_id": "C7",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 12,
+    "evidence_span": "this report describes post hoc analyses from two trials with different protocols, not randomized head-to-head clinical trial evidence, and the results should be considered as hypothesis generating",
+    "computed": null,
+    "why": "Tabák 2020 explicitly caveats on page 316 that it is a post-hoc PSM analysis of LixiLan-L data versus GetGoal Duo-2, not an independent third clinical trial, and must be treated as hypothesis-generating. Furthermore, per-arm sample sizes and SE on the LBL are missing from the provided paywalled abstract. This is a close call: cannot_verify would be defensible if the claim were read as describing three panels rather than asserting an independent third trial. Gold uses overstated because 'shown across three trial panels' presents a re-analysis as independent evidence."
+  }
+]

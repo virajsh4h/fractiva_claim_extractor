@@ -1,0 +1,187 @@
+[
+  {
+    "claim_id": "C1",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "mismatch",
+      "drug_indication": "mismatch",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 4,
+    "evidence_span": "SOLIQUA®\ninsulin glargine (100 U/ml) & lixisenatide\nEXPERIENCE THE SOLIQUA® TOUCH\n\nPowerful efficacy1,2,3\n\nLow rates of\nhypoglycemia1\n\nSOLIQUA® SoloStar®\n10 - 40\nINSULIN GLARGINE 100 U/ml\nLIXISENATIDE 50 µg/ml\n\nWeight neutral1\n\nEasy start4",
+    "computed": null,
+    "reason": "The cited study population does not match the claimed population without broadening or dropping a restriction. The cited molecule, formulation, dose, indication, endpoint or time point does not match the claim. The cited page does not state the claim: \"Indicated for adults with type 2 diabetes insufficiently controlled on basal insulin or oral agents\"."
+  },
+  {
+    "claim_id": "C2",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 5,
+    "evidence_span": "Superiority: LS mean difference iGlarLixi vs BIAsp 30 (95% CI); p-value -0.2 (-0.4, -0.1) %; <0.001 -18.0 -16.0 -14.0 -12.0 -10.0 -8.0 -6.0 -4.0 -2.0 0.0 -1.8 -1.6 -1.4 71 ± 7 70 ± 7 -1.3 ± 0.1 % -1.1 ± 0.1 %",
+    "computed": {
+      "claimed": "Superior HbA1c reduction with once-daily iGlarLixi (1.3 +/- 0.1%) vs twice-daily premix insulin BIAsp 30 (1.1 +/- 0.1%); 95% CI -0.4, -0.1; p<0.001",
+      "from_source": [
+        -1.3,
+        -1.1
+      ],
+      "result": "-0.2",
+      "components": [],
+      "computed_value": -0.2
+    },
+    "reason": "The cited page supports the claim: \"Superior HbA1c reduction with once-daily iGlarLixi (1.3 +/- 0.1%) vs twice-daily premix insulin BIAsp 30 (1.1 +/- 0.1%); 95% CI -0.4, -0.1; p<0.001\". Computed -0.2."
+  },
+  {
+    "claim_id": "C3",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 13,
+    "evidence_span": "The least squares (LS) mean changes from baseline to Week 30 in HbA1c were −1.63% for iGlarLixi, −1.34% for iGlar, and −0.85% for Lixi (Table 2; Fig. 1B).\nStatistical superiority of iGlarLixi over Lixi was demonstrated for the change in HbA1c from baseline to Week 30 (LS mean difference versus Lixi −0.8% [−8.5 mmol/mol] [95% CI: −0.9, −0.7 (−9.8 mmol/mol, −7.3 mmol/mol); p<0.0001]). The LS mean HbA1c difference at Week 30 between iGlarLixi and iGlar (−0.3% [−3.2 mmol/mol] [95% CI: −0.4, −0.2 (−4.2 mmol/mol, −2.1 mmol/mol); p<0.0001]) met non-inferiority of iGlarLixi compared with iGlar and also demonstrated superiority for this primary efficacy endpoint (p<0.0001) based on the step-down testing procedure.",
+    "computed": {
+      "claimed": "~2x greater HbA1c reduction",
+      "from_source": [
+        -1.63,
+        -1.34
+      ],
+      "result": "1.22x",
+      "components": [],
+      "computed_value": 1.216417910447761
+    },
+    "reason": "The cited page does not state the claim: \"With SOLIQUA, ~2x greater HbA1c reduction vs basal insulin (iGlar 100 U/mL), p<0.0001, from baseline to Week 30\". The claimed ~2x greater HbA1c reduction does not reconcile with the source values (-1.63, -1.34); computed 1.22x."
+  },
+  {
+    "claim_id": "C4",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 6,
+    "evidence_span": "Participants who reached HbA1c <7 %|31.8 (n=141)<br>42.2 (n=187)|1.65 (1.25, 2.19)|||",
+    "computed": {
+      "claimed": "More patients achieved HbA1c <7% with iGlarLixi than premix BIAsp 30: 42.20% vs 31.80% (OR 1.65; 95% CI 1.25-2.19)",
+      "from_source": [
+        187.0,
+        443.0,
+        141.0,
+        444.0
+      ],
+      "result": "42.21% | 31.76% | Reported OR: 1.65",
+      "components": [
+        {
+          "claimed": "42.20%",
+          "from_source": [
+            187.0,
+            443.0
+          ],
+          "result": "42.21%",
+          "components": [],
+          "computed_value": 42.21218961625282
+        },
+        {
+          "claimed": "31.80%",
+          "from_source": [
+            141.0,
+            444.0
+          ],
+          "result": "31.76%",
+          "components": [],
+          "computed_value": 31.756756756756754
+        },
+        {
+          "claimed": "OR 1.65; 95% CI 1.25-2.19",
+          "from_source": [
+            187.0,
+            443.0,
+            141.0,
+            444.0
+          ],
+          "result": "Reported OR: 1.65",
+          "components": [],
+          "computed_value": 1.65
+        }
+      ]
+    },
+    "reason": "The cited page supports the claim: \"More patients achieved HbA1c <7% with iGlarLixi than premix BIAsp 30: 42.20% vs 31.80% (OR 1.65; 95% CI 1.25-2.19)\". Computed 42.21% | 31.76% | Reported OR: 1.65."
+  },
+  {
+    "claim_id": "C5",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 2,
+    "evidence_span": "Mean body weight decreased by 0.7 kg with iGlarLixi and increased by 0.7 kg with iGlar (1.4 kg difference, P < 0.0001).",
+    "computed": {
+      "claimed": "Weight neutral",
+      "from_source": [
+        -0.7,
+        0.7
+      ],
+      "result": "Source values: -0.7, 0.7",
+      "components": []
+    },
+    "reason": "The cited page does not state the claim: \"Weight neutral\". The claimed Weight neutral does not reconcile with the source values (-0.7, 0.7); computed Source values: -0.7, 0.7."
+  },
+  {
+    "claim_id": "C6",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 7,
+    "evidence_span": "0.45 (0.28, 0.73)\n25.8 (n=114)\n0.55 (0.42, 0.74)\n31.2 (n=138)\n0.62 (0.47, 0.81)\nFavors\niGlarLixi\nRelative odds\nreduction iGlarLixi\nvs BIAsp 30\nOR† (95% CI)\nIncidence, % (n)\nFavors\nBIAsp 30\nLevel 2 hypoglycemia\n(ADA definition: <54 mg/dL [<3.0 mmol/L])",
+    "computed": {
+      "claimed": "OR 0.45 (0.28, 0.73)",
+      "from_source": [
+        28.0,
+        442.0,
+        57.0,
+        441.0
+      ],
+      "result": "Reported OR: 0.45",
+      "components": [],
+      "computed_value": 0.45
+    },
+    "reason": "The cited page supports the claim: \"Lower risk of level-2 hypoglycemia (ADA: <54 mg/dL) with iGlarLixi vs premix BIAsp 30 [OR 0.45 (0.28, 0.73)]\". Computed Reported OR: 0.45."
+  },
+  {
+    "claim_id": "C7",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 1,
+    "evidence_span": "At study end, estimated treatment differences for reduction in HbA1c and weight change, and ratio of hypoglycemia events per patient-year (BB vs iGlarLixi) were - 0.28% (standard error 0.08, P = 0.0002), - 1.32 kg (standard error 0.30, P \\ 0.0001), and 2.85 (P \\ 0.0001), respectively, all favoring iGlarLixi",
+    "computed": {
+      "claimed": "Weight benefit while switching from basal insulin, shown across three trial panels (LixiLan-L, SoliMix, propensity-score-matching analysis)",
+      "from_source": [
+        -1.32
+      ],
+      "result": "Source values: -1.32",
+      "components": []
+    },
+    "reason": "Source: Tabak2020_PSM.pdf, page 1. The cited page does not state the claim: \"Weight benefit while switching from basal insulin, shown across three trial panels (LixiLan-L, SoliMix, propensity-score-matching analysis)\". The cited page reports -1.32."
+  }
+]
